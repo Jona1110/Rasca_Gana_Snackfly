@@ -162,7 +162,7 @@ function setupEventListeners() {
     document.getElementById('modalBtn').addEventListener('click', closeModal);
     
     // Botón de reinicio (para demo)
-    document.getElementById('resetBtn').addEventListener('click', resetGame);
+    // document.getElementById('resetBtn').addEventListener('click', resetGame);
     
     console.log('🎯 Event listeners configurados');
 }
