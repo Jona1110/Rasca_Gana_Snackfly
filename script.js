@@ -45,7 +45,7 @@ const CONFIG = {
             description: "¡Lleva dos ManzanaBox y paga solo una! Oferta especial para ti."
         }
     ],
-    
+
     // Clave para localStorage
     STORAGE_KEY: "snackfly_scratch_game",
     
@@ -162,7 +162,7 @@ function setupEventListeners() {
     document.getElementById('modalBtn').addEventListener('click', closeModal);
     
     // Botón de reinicio (para demo)
-    // document.getElementById('resetBtn').addEventListener('click', resetGame);
+    document.getElementById('resetBtn').addEventListener('click', resetGame);
     
     console.log('🎯 Event listeners configurados');
 }
@@ -513,10 +513,10 @@ function showAlreadyPlayed() {
  * Reinicia el juego (solo para demo)
  */
 function resetGame() {
-     Limpiar localStorage
+    // Limpiar localStorage
     localStorage.removeItem(CONFIG.STORAGE_KEY);
     
- Recargar página
+    // Recargar página
     location.reload();
     
     console.log('🔄 Juego reiniciado');
@@ -544,4 +544,3 @@ function adjustBrushSize() {
 adjustBrushSize();
 
 console.log('🚀 Script de Snackfly Rasca y Gana cargado correctamente');
-
