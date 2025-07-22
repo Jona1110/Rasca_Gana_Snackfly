@@ -512,15 +512,15 @@ function showAlreadyPlayed() {
 /**
  * Reinicia el juego (solo para demo)
  */
-//function resetGame() {
-    // Limpiar localStorage
-   // localStorage.removeItem(CONFIG.STORAGE_KEY);
+function resetGame() {
+     Limpiar localStorage
+    localStorage.removeItem(CONFIG.STORAGE_KEY);
     
-    // Recargar página
-   // location.reload();
+ Recargar página
+    location.reload();
     
-   // console.log('🔄 Juego reiniciado');
-//}
+    console.log('🔄 Juego reiniciado');
+}
 
 // ===== UTILIDADES ADICIONALES =====
 
